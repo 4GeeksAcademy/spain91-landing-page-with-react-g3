@@ -3,7 +3,7 @@ import { Navbar } from "./navbar";
 
 const Home = () =>{
 	return(
-		<div className="text-center">
+		<div>
       		<Navbar/>
 		</div>
 	)
