@@ -1,12 +1,17 @@
 import React from "react";
 import Jumbotron from "./jumbotron.jsx";
-import rigoImage from "../../img/rigo-baby.jpg";
+import { Navbar } from "./navbar";
+import { Footer } from "./footer";
 
-//create your first component
-const Home = () => {
-	return (
-		<Jumbotron/>
-	);
+
+const Home = () =>{
+	return(
+		<div>
+      		<Navbar/>
+				<Jumbotron/>	
+           <Footer/>
+		</div>
+	)
 };
 
 export default Home;
