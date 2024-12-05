@@ -1,19 +1,17 @@
 import React from "react";
-
-//include images into your bundle
-
+import Jumbotron from "./jumbotron.jsx";
+import { Navbar } from "./navbar";
+import { Footer } from "./footer";
 import { Card } from "./cards";
 
-//create your first component
+
 const Home = () => {
 	return (
-		<div className="container">
-			
+		<div>
+			<Navbar />
+			<Jumbotron />
+			<div className="container">
 				<div className=" row row-cols row-cols-md-2 row-cols-lg-4   mb-4" >
-
-
-
-
 					<Card
 						name='Terri Matthews'
 						email='terri.matthews@example.com'
@@ -34,14 +32,10 @@ const Home = () => {
 					/>
 					<Card />
 				</div>
-
-
-			
-
-
+			</div>
+			<Footer />
 		</div>
-
-	);
+	)
 };
 
 export default Home;			
